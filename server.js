@@ -14,17 +14,17 @@ let reviews = [
   }
 ];
 
-// ✅ Route cek server hidup
+// Route cek server hidup
 app.get("/status", (req, res) => {
   res.json({ message: "Server hidup!" });
 });
 
-// ✅ Route lihat semua review
+// Route lihat semua review
 app.get("/reviews", (req, res) => {
   res.json(reviews);
 });
 
-// ✅ Ambil 1 review berdasarkan id
+// Ambil 1 review berdasarkan id
 app.get("/reviews/:id", (req, res) => {
   const id = Number(req.params.id); // ambil id dari URL
   const review = reviews.find(r => r.id === id); // cari review
