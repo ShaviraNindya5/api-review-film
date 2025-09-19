@@ -1,8 +1,9 @@
  # Proyek API Ulasan Film- Kelompok X
  ## Anggota Kelompok
- - Nama Anggota 1
- - Nama Anggota 2
- - Nama Anggota 3
+ - Avingka Aulia
+ - Martha Dwi Destya
+ - Rahma Titis 
+ - Shavira Nindya
  ## Deskripsi Proyek
  API ini adalah layanan internal untuk mengelola ulasan film dari Studio Ghibli,
  dengan data film yang direferensikan dari Ghibli API publik.
