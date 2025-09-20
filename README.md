@@ -14,3 +14,5 @@
  4. Jalankan server: ‘node server.js‘
  ## Daftar Endpoint
  Server akan berjalan di ‘http://localhost:3300‘.- ‘GET /status‘: Cek status API.- ‘GET /reviews‘: Mengambil semua ulasan.- ‘GET /reviews/:id‘: Mengambil ulasan spesifik.- ‘POST /reviews‘: Membuat ulasan baru.- ‘PUT /reviews/:id‘: Memperbarui ulasan.- ‘DELETE /reviews/:id‘: Menghapus ulasan
+
+ 
