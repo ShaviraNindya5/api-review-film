@@ -1,4 +1,4 @@
- # Proyek API Ulasan Film- Kelompok X
+ # Proyek API Ulasan Film - Kelompok 4
  ## Anggota Kelompok
  - Avingka Aulia
  - Martha Dwi Destya
