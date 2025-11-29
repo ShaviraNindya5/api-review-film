@@ -1,14 +1,29 @@
 {
+<<<<<<< HEAD
   "name": "api-manajemen-film",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+=======
+  "name": "api-review-film",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShaviraNindya5/api-review-film.git"
+>>>>>>> c4603a5c7b371d16df898bc0d534527967e85121
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
@@ -19,5 +34,14 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
+=======
+  "bugs": {
+    "url": "https://github.com/ShaviraNindya5/api-review-film/issues"
+  },
+  "homepage": "https://github.com/ShaviraNindya5/api-review-film#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+>>>>>>> c4603a5c7b371d16df898bc0d534527967e85121
   }
 }

@@ -1,0 +1,282 @@
+{
+	"info": {
+		"_postman_id": "659cd654-0a62-4479-aa8a-ee94cb562322",
+		"name": "Koleksi_Pengujian",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48009051"
+	},
+	"item": [
+		{
+			"name": "status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "films",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ghibliapi.dev/films/",
+					"protocol": "https",
+					"host": [
+						"ghibliapi",
+						"dev"
+					],
+					"path": [
+						"films",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "id_film",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ghibliapi.dev/films/12cfb892-aac0-4c5b-94af-521852e46d6a",
+					"protocol": "https",
+					"host": [
+						"ghibliapi",
+						"dev"
+					],
+					"path": [
+						"films",
+						"12cfb892-aac0-4c5b-94af-521852e46d6a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "id_reviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/reviews/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reviews",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "errror_GetReviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/reviews/99",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reviews",
+						"99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_reviews",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"filmId\": \"12cfb892-aac0-4c5b-94af-521852e46d6a\",\r\n  \"user\": \"Budi\",\r\n  \"rating\": 4,\r\n  \"comment\": \"Sedih tapi sangat menyentuh\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "error_PostReviews",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"filmId\": \"12cfb892-aac0-4c5b-94af-521852e46d6a\",\r\n  \"user\": \"Budi\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put_reviews",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"rating\": 3,\r\n  \"comment\": \"Setelah dipikir-pikir, terlalu sedih buat ditonton ulang\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/reviews/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reviews",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "error_PutReviews",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"rating\": 3,\r\n  \"comment\": \"Setelah dipikir-pikir, terlalu sedih buat ditonton ulang\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/reviews/99",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reviews",
+						"99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_reviews",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/reviews/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reviews",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "error_DeleteReviews",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/reviews/99",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reviews",
+						"99"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
